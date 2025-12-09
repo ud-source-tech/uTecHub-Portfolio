@@ -1,0 +1,333 @@
+:root {
+      --bg: #f8f9fa;
+      --text: #222;
+      --accent: #0077ff;
+      --card: #fff;
+      --icon-size: 50px;
+      --icon-gap: 16px;
+    }
+    body.dark {
+      --bg: #121212;
+      --text: #e9e9e9;
+      --card: #1e1e1e;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: background .3s, color .3s;
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      background: var(--card);
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    #theme-toggle {
+      cursor: pointer;
+      padding: 6px 12px;
+      background: var(--accent);
+      color: white;
+      border-radius: 6px;
+      border: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+    }
+    .typing {
+      color: var(--accent);
+      font-weight: bold;
+      display: inline-block;
+      min-width: 14ch;
+      white-space: nowrap;
+      vertical-align: middle;
+      overflow: hidden;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .8s, transform .8s;
+    }
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .skill {
+      padding: 10px 16px;
+      background: var(--card);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+  
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 60px;
+      background: var(--card);
+    }
+.hero-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.hero-photo {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex: 0 0 260px;
+}
+.hero-content {
+  flex: 1 1 320px;
+  min-width: 260px;
+
+}
+.logo{
+  background-color: none;
+  color: #0077ff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-family: cursive;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Flip order (photo on right) */
+.hero-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 720px) {
+  .hero-row {
+    flex-direction: column; 
+    text-align: center; 
+    align-items: center;
+  }
+}
+.hero-row.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 720px) {
+  .hero-row {
+    flex-direction: column;  /* stack content vertically */
+    align-items: center;     /* center everything horizontally */
+    text-align: center;      /* center text */
+    gap: 18px;               /* smaller spacing */
+  }
+
+  .hero-photo {
+    width: 180px;
+    height: 180px;
+    flex: 0 0 auto;
+    margin: 0 auto;          /* center image */
+  }
+
+  .hero-content {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+.sr-only {
+   position: absolute; 
+   width: 1px; 
+   height: 1px; 
+   padding: 0; 
+   margin:-1px; 
+   overflow: hidden; 
+   clip: rect(0,0,0,0); 
+   white-space: nowrap; 
+   border: 0; 
+  }
+
+.icon-link{
+  padding: 10px;
+  font-size: 50px;
+
+}
+.contact-icons {
+  display: flex;
+  align-items: center;
+  gap: var(--icon-gap);
+}
+
+.icon-link {
+  color: #0077ff;                  /* default color */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-link:hover {
+  color: #000;                  /* hover color */
+}
+
+.icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+
+
+.skill-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 60px;   /* change this to resize icons */
+  height: 60px;
+}
+
+.skills-section {
+  padding: 40px 0;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: none;
+  border-radius: 10px;
+  padding: 18px 10px;
+  text-align: center;
+  transition: 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-card:hover {
+  background: none;
+  transform: translateY(-4px);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+/* Desktop / Web */
+.project-list {
+  display: flex;
+  flex-direction: column; /* vertical layout */
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project {
+  background: none;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 700px;  /* increased so it looks better on desktop */
+  margin: 0 auto;    /* center on desktop */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .project-list {
+    flex-direction: column;  /* KEEP VERTICAL on mobile */
+    padding: 1rem;
+    gap: 1.2rem;
+  }
+
+  .project {
+    width: 100%;        /* take full width of the phone */
+    max-width: 100%;    /* override desktop max */
+    margin: 0;          /* no centering */
+    box-sizing: border-box;
+  }
+}
+

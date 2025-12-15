@@ -1,5 +1,5 @@
 // Typing effect
-const words = ["Frontend Developer", "Problem Solver", "Solution Provider"];
+const words = ["Frontend Developer","HTML, CSS, JavaScript"];
 const typingEl = document.querySelector(".typing");
 let i = 0, j = 0, deleting = false;
 

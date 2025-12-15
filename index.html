@@ -29,40 +29,32 @@
 
   <section class="hero show hero-row reverse">
      <img src="images/images.png" alt="My Portrait"  class="hero-photo">
-        <div class="hero-content">
+      <div class="hero-content">
         <h1>Hello, I'm PETER
-          <br>
            UDECHUKWU, And 
-           <br>
-           I'm a <span class="typing"></span></h1>
-    <p>Hey there—pull up a chair and make yourself at home, <br> 
-      Welcome to this little nook of mine on the web. It's funny<br>
-      how these digital spots start out as just a quiet place to<br>
-      tinker and dream, isn't it?. Back when I first got hooked<br>
-      on building things online, it felt like uncovering hidden<br>
-      treasures, one line of code at a time. I'd love for you to<br>
-      wander through my story with me: the front-end magic      <br>
-      that makes everything sparkle, and yeah, those projects<br>
-      and late-night lessons that shaped me along the way.</p>
-    <a class="btn" href="#projects">See My Work</a>
+           I'm a <span class="typing"></span>
+        </h1>
+        <p>Hey there— I build clean, 
+           responsive websites using HTML, CSS, and JavaScript.
+        </p>
+        <a class="btn" href="#projects">See My Work</a>
+         <a href="#contact" class="btn secondary">Contact Me</a>
       </div>
-    </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p> I'm PETER UDECHUKWU, a passionate Frond-End Developer with a love for crafting innovative solutions and bringing ideas to life.
-    <br>
-    <br>
-     I've honed my skills in Front-End, mastering technologies like HTML, CSS, JavaScript along with other notable technologies.
-     I build responsive user interfaces, I thrive on the challenges of software development and constantly seek opportunities to expand my knowledge.
-     <br>
-     <br>
-     I recently wrapped up learning HTML and CSS and I'm diving deeper into JavaScript daily.
-     I enjoy learning by building small projects and trying new ideas.</p>
   </section>
 
+  <section class="about" id="about">
+  <h2 class="ab">About Me</h2>
+  <p>
+    I’m a Junior Front-End Developer focused on building clean, responsive websites using HTML, CSS, and JavaScript. 
+    I enjoy turning designs into functional, user-friendly experiences and continuously learning new technologies like React, TypeScript, and Firebase etc.
+  </p>
+  <p>
+    i have worked on projects and I’m currently looking for entry-level or junior front-end roles where I can contribute my skills and grow as part of a dynamic team.
+  </p>
+</section>
+
   <section id="skills">
-    <h2>Skills</h2>
+    <h2 class="SH">Skills</h2>
       <div class="skill-icons">
 
     <!-- HTML5 -->
@@ -221,34 +213,59 @@
 </div>
 </section>
 
-  <section id="project">
-    <h2>Projects</h2>
-    <div class="project-list">
-     <article class="project">
-        <h2>Portfolio Landing page</h2>
-        <p>A clean landing page built with HTML & CSS..</p>
-        <a href="https://github.com/ud-source-tech/MyVA-Portfolio" target="_blank">View Code</a>
-        <a href="https://ud-source-tech.github.io/MyVA-Portfolio" target="_blank">Live Demo</a>
-    </article>
+<section class="projects" id="projects">
+  <h2>My Projects</h2>
+  
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>A personal portfolio site showcasing my skills and projects.</p>
+    <p><strong>Tech Used:</strong> HTML, CSS, JavaScript, Responsive Design, Git, GitHub</p>
+    <p><strong>Learning / Applied:</strong> React (basics), Sass</p>
+    <p><strong>Role:</strong> Designed layout, coded pages, implemented responsive design.</p>
+    <div class="project-links">
+      <a href="https://ud-source-tech.github.io/uTecHub-Portfolio/" target="_blank">Live Demo</a>
+      <a href="https://github.com/ud-source-tech/uTecHub-Portfolio" target="_blank">Code</a>
+    </div>
+  </div>
 
-     <article class="project">
-        <h2>0325 Responsive Layout</h2>
-        <p>Experimenting with Flexbox and Grid</p>
-        <a href="https://github.com/ud-source-tech/0325-perfume" target="_blank">View Code</a>
-        <a href="https://ud-source-tech.github.io/0325-perfume" target="_blank">Live Demo</a>
-    </article>
+  <div class="project-card">
+    <h3>Portfolio Landing page</h3>
+    <p>A landing page built for a fictional product, focused on clean UI and responsive layout.</p>
+    <p><strong>Tech Used:</strong> HTML, CSS, Flexbox, CSS Grid, JavaScript</p>
+    <p><strong>Learning / Applied:</strong> Bootstrap, TypeScript</p>
+    <p><strong>Role:</strong> Created responsive design, interactive elements, and animations.</p>
+    <div class="project-links">
+      <a href="https://ud-source-tech.github.io/MyVA-Portfolio/" target="_blank">Live Demo</a>
+      <a href="https://github.com/ud-source-tech/MyVA-Portfolio" target="_blank">Code</a>
+    </div>
+  </div>
 
-     <article class="project">
-        <h2>JavaScript Responsiveness</h2>
-        <p>A clean landing page built with HTML & CSS, with Flexbox and Grid,Small interactive tool</p>
-        <a href="https://github.com/ud-source-tech/MyVA-Portfolio" target="_blank">View Code</a>
-        <a href="https://ud-source-tech.github.io/MyVA-Portfolio" target="_blank">Live Demo</a>
-    </article>
+  <div class="project-card">
+    <h3>Todo App</h3>
+    <p>A task management web app to track daily tasks with interactive UI.</p>
+    <p><strong>Tech Used:</strong> HTML5, CSS3, JavaScript, Responsive Design, Git</p>
+    <p><strong>Learning / Applied:</strong> React (basics), Firebase</p>
+    <p><strong>Role:</strong> Built task add/remove features, local storage, and responsive layout.</p>
+    <div class="project-links">
+      <a href="https://example.com/todo-app" target="_blank">Live Demo</a>
+      <a href="https://github.com/ud-source-tech/todo-app" target="_blank">Code</a>
+    </div>
+  </div>
+  <!-- Add more projects similarly -->
+</section>
 
-      
-      </div>
-  </section>
-  <footer>
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <p>If you’d like to work together or have any questions, feel free to reach out.</p>
+
+  <form action="mailto:your-email@example.com" method="POST" enctype="text/plain" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <footer class="Ft">
     <a class="icon-link" href="https://www.linkedin.com/in/peter-udechukwu"
     target="-blank" rel="noopener noreferrer"
     aria-label="Linkedin">
@@ -257,7 +274,8 @@
     <a class="icon-link" href="https://github.com/ud-source-tech" 
    target="_blank" rel="noopener noreferrer" 
    aria-label="GitHub profile" title="GitHub">
-  <!-- GitHub SVG -->
+  
+   <!-- GitHub SVG -->
   <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
     <path fill="currentColor"
       d="M12 0.5C5.37 0.5 0 5.87 0 12.5c0 5.29 3.44 9.78 8.21 11.38.6.11.82-.26.82-.58
@@ -270,7 +288,7 @@
       0 1.6-.02 2.89-.02 3.28 0 .32.22.69.82.58A12.01 12.01 0 0 0 24 12.5
       C24 5.87 18.63 0.5 12 0.5z"/>
   </svg></a>
-   
+
    <a class="icon-link" href="mailto:udpeter196@gmail.com"
     ariel-lable="Email">
     <i class="fa-regular fa-envelope"></i></a>

@@ -91,10 +91,11 @@ nav a:hover {
   color: var(--accent);
   font-weight: bold;
   display: inline-block;
-  min-width: 14ch;
+  font-size: 40px;
   white-space: nowrap;
   vertical-align: middle;
   overflow: hidden;
+  width: 100%;
 }
 
 .btn {

@@ -91,7 +91,7 @@ nav a:hover {
   color: var(--accent);
   font-weight: bold;
   display: inline-block;
-  font-size: 32px;
+  font-size: 30px;
   white-space: nowrap;
   vertical-align: middle;
   overflow: hidden;
